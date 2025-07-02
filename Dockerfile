@@ -11,9 +11,6 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     file \
     g++ \
-    libcxxopts-dev \
-    libzmq3-dev \
-    libczmq-dev \
     make \
     python3-pip \
     sudo \
