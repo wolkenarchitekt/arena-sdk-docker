@@ -1,11 +1,10 @@
 FROM ubuntu:24.04
 
-ARG URL_PREFIX="https://github.com/wolkenarchitekt/arena-sdk-docker/releases/download/"
 ARG ARENA_SDK="ArenaSDK_v0.1.104_Linux_x64.tar.gz"
-ARG ARENA_SDK_URL="${URL_PREFIX}/arenasdk-0.1.104-Linux-x64/${ARENA_SDK}"
+ARG ARENA_SDK_URL="https://github.com/wolkenarchitekt/arena-sdk-docker/releases/download/arenasdk-0.1.104-Linux-x64/${ARENA_SDK}"
 ARG ARENA_SDK_CONF="Arena_SDK_Linux_x64.conf"
 ARG ARENA_PYTHON_SDK="arena_api-2.7.1-py3-none-any"
-ARG ARENA_PYTHON_SDK_URL="${URL_PREFIX}/arena_api-2.7.1-py3-none-any/${ARENA_PYTHON_SDK}.zip"
+ARG ARENA_PYTHON_SDK_URL="https://github.com/wolkenarchitekt/arena-sdk-docker/releases/download/arena_api-2.7.1-py3-none-any/${ARENA_PYTHON_SDK}.zip"
 
 RUN apt-get update && apt-get install -y \
     build-essential \
